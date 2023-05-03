@@ -125,6 +125,3 @@ class GUI():
             abstract_frame.grid(row=7, sticky=tkinter.W)
             sub_frame.grid(row=0, column=1, sticky=tkinter.N)
             self.subroot.mainloop()
-
-#try a run
-GUI()
