@@ -74,7 +74,7 @@ class GUI():
             self.treeview.insert(parent='', index=tkinter.END,
                                  values=(number, title, authors, time, keywords, url, abstract))
 
-    def paper_item_show(self, event):
+    def paper_item_show(self,event):
         #display article details
         for index in self.treeview.selection():
             values = self.treeview.item(index, "values")
@@ -125,3 +125,6 @@ class GUI():
             abstract_frame.grid(row=7, sticky=tkinter.W)
             sub_frame.grid(row=0, column=1, sticky=tkinter.N)
             self.subroot.mainloop()
+
+#try a run
+#GUI()
